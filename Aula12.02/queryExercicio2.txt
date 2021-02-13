@@ -1,0 +1,61 @@
+CREATE DATABASE db_ecommerce
+
+CREATE TABLE db_ecommerce.produto(
+ProdutoID INT NOT NULL AUTO_INCREMENT ,
+nomeProduto VARCHAR(45) NOT NULL,
+descricaoProduto VARCHAR(50) NOT NULL,
+precoProduto DOUBLE NOT NULL,
+corProduto VARCHAR(45) NOT NULL,
+PRIMARY KEY(ProdutoID)
+)
+
+INSERT INTO db_ecommerce.produto(nomeProduto, descricaoProduto, precoProduto, corProduto)
+VALUES(
+'Iphone x', '256 GB de armazenamento', '7000', 'PRETO'
+);
+
+INSERT INTO db_ecommerce.produto(nomeProduto, descricaoProduto, precoProduto, corProduto)
+VALUES(
+'Fone TWS', '18 horas de duração da bateria', '750', 'BRANCO'
+);
+
+INSERT INTO db_ecommerce.produto(nomeProduto, descricaoProduto, precoProduto, corProduto)
+VALUES(
+'Cabo USB-TYPE C', '1M DE COMPRIMENTO', '100', 'BRANCO'
+);
+
+INSERT INTO db_ecommerce.produto(nomeProduto, descricaoProduto, precoProduto, corProduto)
+VALUES(
+'MOTOROLA G9', 'MUITO BOM', '1500', 'CINZA'
+);
+
+INSERT INTO db_ecommerce.produto(nomeProduto, descricaoProduto, precoProduto, corProduto)
+VALUES(
+'APPLE WATCH', '42MM', '3000', 'CINZA'
+);
+
+INSERT INTO db_ecommerce.produto(nomeProduto, descricaoProduto, precoProduto, corProduto)
+VALUES(
+'GUARDA CHUVA XIAOMI', 'AUTOMATICO', '150', 'PRETO'
+);
+
+INSERT INTO db_ecommerce.produto(nomeProduto, descricaoProduto, precoProduto, corProduto)
+VALUES(
+'BATERIA EXTERNA', 'MUITO BOA', '550', 'BRANCO'
+);
+
+INSERT INTO db_ecommerce.produto(nomeProduto, descricaoProduto, precoProduto, corProduto)
+VALUES(
+'NOTEBOOK DELL', 'I9, 16 GB RAM E 5T SDD RTG3090', '15000', 'BRANCO'
+);
+
+SELECT * FROM db_ecommerce.produto
+WHERE precoProduto > 500
+
+SELECT * FROM db_ecommerce.produto
+WHERE precoProduto < 500
+
+UPDATE db_ecommerce.produto set nomeProduto = 'IPHONE' WHERE ProdutoID ='1'
+
+SELECT * FROM db_ecommerce.produto
+

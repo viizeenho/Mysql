@@ -1,0 +1,60 @@
+#CREATE DATABASE db_escola
+
+#CREATE TABLE db_escola.aluno(
+#alunoID INT NOT NULL AUTO_INCREMENT,
+#nomeAluno VARCHAR(50) NOT NULL,
+#sobreNome VARCHAR(50) NOT NULL,
+#idadeAluno INT NOT NULL,
+#serieAluno INT NOT NULL,
+#notaAluno DOUBLE NULL,
+#PRIMARY KEY(alunoID)
+#)
+
+INSERT INTO db_escola.aluno (nomeAluno, sobreNome, idadeAluno, serieAluno, notaAluno)
+VALUES(
+'Vinicius','Menezes','24','1','7'
+);
+
+INSERT INTO db_escola.aluno (nomeAluno, sobreNome, idadeAluno, serieAluno, notaAluno)
+VALUES(
+'Pedro','Silva','18','1','4'
+);
+
+INSERT INTO db_escola.aluno (nomeAluno, sobreNome, idadeAluno, serieAluno, notaAluno)
+VALUES(
+'Victor','Menezes','21','8','5.5'
+);
+
+INSERT INTO db_escola.aluno (nomeAluno, sobreNome, idadeAluno, serieAluno, notaAluno)
+VALUES(
+'Thiago','Santos','19','6','8'
+);
+
+INSERT INTO db_escola.aluno (nomeAluno, sobreNome, idadeAluno, serieAluno, notaAluno)
+VALUES(
+'Bianca','Menezes','23','7','6'
+);
+
+INSERT INTO db_escola.aluno (nomeAluno, sobreNome, idadeAluno, serieAluno, notaAluno)
+VALUES(
+'Sergio','Menezes','22','3','9'
+);
+
+INSERT INTO db_escola.aluno (nomeAluno, sobreNome, idadeAluno, serieAluno, notaAluno)
+VALUES(
+'Pablo','Silva','21','4','4'
+);
+
+INSERT INTO db_escola.aluno (nomeAluno, sobreNome, idadeAluno, serieAluno, notaAluno)
+VALUES(
+'Jessica','Pereira','17','1','6'
+);
+
+SELECT * FROM db_escola.aluno
+
+WHERE notaAluno > 7
+
+SELECT * FROM db_escola.aluno
+WHERE notaAluno < 7
+
+UPDATE db_escola.aluno SET notaAluno = '7' WHERE alunoID = '3'

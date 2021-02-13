@@ -1,0 +1,62 @@
+CREATE DATABASE db_rh
+
+CREATE TABLE db_rh.Funcionario (
+FuncionarioID INT NOT NULL AUTO_INCREMENT,
+nomeFuncionario VARCHAR(50) NOT NULL,
+endereco VARCHAR(50) NOT NULL,
+cidade VARCHAR(35) NOT NULL,
+salario INT NOT NULL,
+primary key(FuncionarioID)
+)
+
+INSERT INTO db_rh.funcionario (nomeFuncionario, endereco, cidade, salario) 
+VALUES (
+'Vinicius Menezes', 'Av Paulista', 'São Paulo', '25000'
+);
+
+INSERT INTO db_rh.funcionario (nomeFuncionario, endereco, cidade, salario) 
+VALUES (
+'Aline', 'Al Santos', 'São Paulo', '29000'
+);
+
+INSERT INTO db_rh.funcionario (nomeFuncionario, endereco, cidade, salario) 
+VALUES (
+'Victor', 'Al Rio Negro', 'Barueri', '1900'
+);
+
+
+INSERT INTO db_rh.funcionario (nomeFuncionario, endereco, cidade, salario) 
+VALUES (
+'Pedro', 'Rua Augusta', 'São Paulo', '3000'
+);
+
+INSERT INTO db_rh.funcionario (nomeFuncionario, endereco, cidade, salario) 
+VALUES (
+'João', 'Rua Maria Antonia', 'São Paulo', '1700'
+);
+
+SELECT * FROM db_rh.funcionario
+WHERE salario > 2000
+
+SELECT * FROM db_rh.funcionario
+WHERE salario < 2000
+
+UPDATE db_rh.funcionario SET endereco = 'Av. Paulista' WHERE funcionarioID = '1'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
